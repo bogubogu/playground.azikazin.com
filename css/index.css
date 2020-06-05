@@ -24,6 +24,18 @@ html,body {
       padding: 0;
     }
     
+@media screen and (min-width:768px) {
+    .post_spacer {
+        margin-bottom:5rem;
+    }
+}
+    @media screen and (max-width:767px) {
+    .post_spacer {
+        margin-bottom:5rem;
+    }
+}
+    
+    
     #mobilefooter {
     background-image: url('https://assets.azikazin.com/footer.png');
     background-size: 40%;
@@ -955,7 +967,7 @@ body .post_main:not(h2) {
     border-radius: 5px;
     position: absolute;
     left: 75em;
-    top:3em;
+    top:1.5em;
     padding: 20px 7px;
 }
 .sidecontent a:link,.sidecontent a:visited {
@@ -1364,6 +1376,7 @@ a.post-title:hover {
 }
 .tags {
     margin-top:1em;
+float:left;
 }
 .pagination {
     text-align:center;
@@ -1682,4 +1695,3 @@ button.swiper-pagination-bullet {
     opacity: 0.8;
     background: var(--swiper-pagination-color, var(--swiper-theme-color))
 }
-
