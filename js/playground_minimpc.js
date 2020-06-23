@@ -81,12 +81,11 @@ function create ()
         'Press W for Sound2',
         'Press E for Sound3',
         'Press R for Sound4',
-        '',
         'Press T for Sound5',
         'Press Y for Sound6',
         'Press U for Sound7',
-        'Press I for Sound8',
         '',
+        'Press I for Sound8',
         'Press S for Sound9',
         'Press F for Sound10',
         'Press H for Sound11',
@@ -482,30 +481,6 @@ function create ()
     }, this);
 
     this.input.keyboard.on('keydown-I', function () {
-        if(chord5.play()) { //loop1
-            chord5.stop()
-        }
-        if(chord6.play()) {
-            chord6.stop()
-        }
-         if(chord7.play()){
-            chord7.stop()
-        }
-        if(chord8.play()){
-            chord8.stop()
-        }
-        if(chord9.play()){
-            chord9.stop()
-        }
-        if(chord10.play()){
-            chord10.stop()
-        }
-        if(chord11.play()){
-            chord11.stop()
-        }
-        if(chord12.play()){
-            chord12.stop()
-        }
         chord12.play();
         this.add.image(400, 300, 'mpcscreen4');
         
