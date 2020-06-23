@@ -78,19 +78,19 @@ function create ()
         'Press 4 for LOOP4',
         '',
         'Press Q for Sound1',
-        'Press E for Sound2',
-        'Press R for Sound3',
-        'Press U for Sound4',
+        'Press W for Sound2',
+        'Press E for Sound3',
+        'Press R for Sound4',
         '',
-        'Press A for Sound5',
-        'Press D for Sound6',
-        'Press F for Sound7',
-        'Press J for Sound8',
+        'Press T for Sound5',
+        'Press Y for Sound6',
+        'Press U for Sound7',
+        'Press I for Sound8',
         '',
-        'Press X for Sound9',
-        'Press C for Sound10',
-        'Press V for Sound11',
-        'Press N for Sound12',
+        'Press S for Sound9',
+        'Press F for Sound10',
+        'Press H for Sound11',
+        'Press K for Sound12',
         '',
         'SPACE to stop all sounds'
     ];
@@ -301,7 +301,7 @@ function create ()
     }, this);
     
 
-    this.input.keyboard.on('keydown-E', function () {
+    this.input.keyboard.on('keydown-W', function () {
         if(chord5.play()) { //loop1
             chord5.stop()
         }
@@ -331,7 +331,7 @@ function create ()
         
     }, this);
 
-    this.input.keyboard.on('keydown-R', function () {
+    this.input.keyboard.on('keydown-E', function () {
         if(chord5.play()) { //loop1
             chord5.stop()
         }
@@ -361,7 +361,7 @@ function create ()
         
     }, this);
 
-    this.input.keyboard.on('keydown-U', function () {
+    this.input.keyboard.on('keydown-R', function () {
         if(chord5.play()) { //loop1
             chord5.stop()
         }
@@ -391,7 +391,7 @@ function create ()
         
     }, this);
 
-    this.input.keyboard.on('keydown-A', function () {
+    this.input.keyboard.on('keydown-T', function () {
         if(chord5.play()) { //loop1
             chord5.stop()
         }
@@ -421,7 +421,7 @@ function create ()
         
     }, this);
 
-    this.input.keyboard.on('keydown-D', function () {
+    this.input.keyboard.on('keydown-Y', function () {
         if(chord5.play()) { //loop1
             chord5.stop()
         }
@@ -451,7 +451,7 @@ function create ()
         
     }, this);
 
-    this.input.keyboard.on('keydown-F', function () {
+    this.input.keyboard.on('keydown-U', function () {
         if(chord5.play()) { //loop1
             chord5.stop()
         }
@@ -481,7 +481,7 @@ function create ()
         
     }, this);
 
-    this.input.keyboard.on('keydown-J', function () {
+    this.input.keyboard.on('keydown-I', function () {
         if(chord5.play()) { //loop1
             chord5.stop()
         }
@@ -511,25 +511,25 @@ function create ()
         
     }, this);
 
-    this.input.keyboard.on('keydown-X', function () {
+    this.input.keyboard.on('keydown-S', function () {
         sample13.play();
         this.add.image(400, 300, 'mpcscreen5');
         
     }, this);
 
-    this.input.keyboard.on('keydown-C', function () {
+    this.input.keyboard.on('keydown-F', function () {
         sample14.play();
         this.add.image(400, 300, 'mpcscreen6');
         
     }, this);
 
-    this.input.keyboard.on('keydown-V', function () {
+    this.input.keyboard.on('keydown-H', function () {
         sample15.play();
         this.add.image(400, 300, 'mpcscreen1');
         
     }, this);
 
-    this.input.keyboard.on('keydown-N', function () {
+    this.input.keyboard.on('keydown-K', function () {
         sample16.play();
         this.add.image(400, 300, 'mpcscreen2');
         
