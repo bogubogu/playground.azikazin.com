@@ -291,9 +291,6 @@ function create ()
         if(chord11.play()){
             chord11.stop()
         }
-        if(chord12.play()){
-            chord12.stop()
-        }
         chord5.play();
         this.add.image(400, 300, 'mpcscreen3');
         
@@ -322,9 +319,6 @@ function create ()
         if(chord11.play()){
             chord11.stop()
         }
-        if(chord12.play()){
-            chord12.stop()
-        }
         chord6.play();
         this.add.image(400, 300, 'mpcscreen4');
         
@@ -351,9 +345,6 @@ function create ()
         }
         if(chord11.play()){
             chord11.stop()
-        }
-        if(chord12.play()){
-            chord12.stop()
         }
         chord7.play();
         this.add.image(400, 300, 'mpcscreen5');
@@ -382,9 +373,6 @@ function create ()
         if(chord11.play()){
             chord11.stop()
         }
-        if(chord12.play()){
-            chord12.stop()
-        }
         chord8.play();
         this.add.image(400, 300, 'mpcscreen6');
         
@@ -411,9 +399,6 @@ function create ()
         }
         if(chord11.play()){
             chord11.stop()
-        }
-        if(chord12.play()){
-            chord12.stop()
         }
         chord9.play();
         this.add.image(400, 300, 'mpcscreen1');
@@ -442,9 +427,6 @@ function create ()
         if(chord11.play()){
             chord11.stop()
         }
-        if(chord12.play()){
-            chord12.stop()
-        }
         chord10.play();
         this.add.image(400, 300, 'mpcscreen2');
         
@@ -471,9 +453,6 @@ function create ()
         }
         if(chord11.play()){
             chord11.stop()
-        }
-        if(chord12.play()){
-            chord12.stop()
         }
         chord11.play();
         this.add.image(400, 300, 'mpcscreen3');
