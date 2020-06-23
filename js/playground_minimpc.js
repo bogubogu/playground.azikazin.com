@@ -71,19 +71,19 @@ function create ()
         'Press 4 for LOOP4',
         '',
         'Press Q for Sound1',
-        'Press W for Sound2',
-        'Press E for Sound3',
-        'Press R for Sound4',
+        'Press E for Sound2',
+        'Press R for Sound3',
+        'Press U for Sound4',
         '',
         'Press A for Sound5',
-        'Press S for Sound6',
-        'Press D for Sound7',
-        'Press F for Sound8',
+        'Press D for Sound6',
+        'Press H for Sound7',
+        'Press I for Sound8',
         '',
         'Press Z for Sound9',
-        'Press X for Sound10',
-        'Press C for Sound11',
-        'Press V for Sound12',
+        'Press C for Sound10',
+        'Press N for Sound11',
+        'Press O for Sound12',
         '',
         'SPACE to stop all sounds'
     ];
@@ -269,7 +269,7 @@ function create ()
     });
     
 
-    this.input.keyboard.on('keydown-W', function () {
+    this.input.keyboard.on('keydown-E', function () {
         if(chord5.play()) { //loop1
             chord5.stop()
         }
@@ -297,7 +297,7 @@ function create ()
         chord6.play();
     });
 
-    this.input.keyboard.on('keydown-E', function () {
+    this.input.keyboard.on('keydown-R', function () {
         if(chord5.play()) { //loop1
             chord5.stop()
         }
@@ -325,7 +325,7 @@ function create ()
         chord7.play();
     });
 
-    this.input.keyboard.on('keydown-R', function () {
+    this.input.keyboard.on('keydown-U', function () {
         if(chord5.play()) { //loop1
             chord5.stop()
         }
@@ -381,7 +381,7 @@ function create ()
         chord9.play();
     });
 
-    this.input.keyboard.on('keydown-S', function () {
+    this.input.keyboard.on('keydown-D', function () {
         if(chord5.play()) { //loop1
             chord5.stop()
         }
@@ -409,7 +409,7 @@ function create ()
         chord10.play();
     });
 
-    this.input.keyboard.on('keydown-D', function () {
+    this.input.keyboard.on('keydown-H', function () {
         if(chord5.play()) { //loop1
             chord5.stop()
         }
@@ -437,7 +437,7 @@ function create ()
         chord11.play();
     });
 
-    this.input.keyboard.on('keydown-F', function () {
+    this.input.keyboard.on('keydown-I', function () {
         if(chord5.play()) { //loop1
             chord5.stop()
         }
@@ -469,15 +469,15 @@ function create ()
         sample13.play();
     });
 
-    this.input.keyboard.on('keydown-X', function () {
+    this.input.keyboard.on('keydown-C', function () {
         sample14.play();
     });
 
-    this.input.keyboard.on('keydown-C', function () {
+    this.input.keyboard.on('keydown-N', function () {
         sample15.play();
     });
 
-    this.input.keyboard.on('keydown-V', function () {
+    this.input.keyboard.on('keydown-O', function () {
         sample16.play();
     });
 }
