@@ -16,6 +16,13 @@ function preload ()
 {
     this.load.image('artwork', 'assets/noodlegame1.png');
 
+    this.load.image('mpcscreen1', 'assets/mpcscreen1.png');
+    this.load.image('mpcscreen2', 'assets/mpcscreen2.png');
+    this.load.image('mpcscreen3', 'assets/mpcscreen3.png');
+    this.load.image('mpcscreen4', 'assets/mpcscreen4.png');
+    this.load.image('mpcscreen5', 'assets/mpcscreen5.png');
+    this.load.image('mpcscreen6', 'assets/mpcscreen6.png');
+
     this.load.setPath('assets/audio/soundpack');
 
     this.load.audio('loop1', [ 'loop1.mp3' ]);
@@ -77,13 +84,13 @@ function create ()
         '',
         'Press A for Sound5',
         'Press D for Sound6',
-        'Press H for Sound7',
-        'Press I for Sound8',
+        'Press F for Sound7',
+        'Press J for Sound8',
         '',
-        'Press Z for Sound9',
+        'Press X for Sound9',
         'Press C for Sound10',
-        'Press N for Sound11',
-        'Press O for Sound12',
+        'Press V for Sound11',
+        'Press N for Sound12',
         '',
         'SPACE to stop all sounds'
     ];
@@ -100,9 +107,16 @@ function create ()
         });
     }
 
+
+
     this.input.keyboard.on('keydown-SPACE', function () {
         this.sound.stopAll();
     }, this);
+
+    
+
+
+
 // LOOP 
     this.input.keyboard.on('keydown-ONE', function () {
         if(loop1.play()) { //loop1
@@ -119,7 +133,9 @@ function create ()
         }
 
         loop1.play();
-    });
+        this.add.image(400, 300, 'mpcscreen1');
+        
+    }, this);
 
     this.input.keyboard.on('keydown-TWO', function () {
         if(loop1.play()) { //loop1
@@ -136,7 +152,9 @@ function create ()
         }
 
         loop2.play();
-    });
+        this.add.image(400, 300, 'mpcscreen2');
+        
+    }, this);
 
     this.input.keyboard.on('keydown-THREE', function () {
         if(loop1.play()) { //loop1
@@ -153,7 +171,9 @@ function create ()
         }
 
         loop3.play();
-    });
+        this.add.image(400, 300, 'mpcscreen3');
+        
+    }, this);
 
     this.input.keyboard.on('keydown-FOUR', function () {
         if(loop1.play()) { //loop1
@@ -170,7 +190,9 @@ function create ()
         }
 
         loop4.play();
-    });
+        this.add.image(400, 300, 'mpcscreen4');
+        
+    }, this);
 
     this.input.keyboard.on('keydown-NUMPAD_ONE', function () {
         if(loop1.play()) { //loop1
@@ -187,7 +209,9 @@ function create ()
         }
 
         loop1.play();
-    });
+        this.add.image(400, 300, 'mpcscreen5');
+        
+    }, this);
 
     this.input.keyboard.on('keydown-NUMPAD_TWO', function () {
         if(loop1.play()) { //loop1
@@ -204,7 +228,9 @@ function create ()
         }
 
         loop2.play();
-    });
+        this.add.image(400, 300, 'mpcscreen6');
+        
+    }, this);
 
     this.input.keyboard.on('keydown-NUMPAD_THREE', function () {
         if(loop1.play()) { //loop1
@@ -221,7 +247,9 @@ function create ()
         }
 
         loop3.play();
-    });
+        this.add.image(400, 300, 'mpcscreen1');
+        
+    }, this);
 
     this.input.keyboard.on('keydown-NUMPAD_FOUR', function () {
         if(loop1.play()) { //loop1
@@ -238,7 +266,9 @@ function create ()
         }
 
         loop4.play();
-    });
+        this.add.image(400, 300, 'mpcscreen2');
+        
+    }, this);
 
     this.input.keyboard.on('keydown-Q', function () {
         if(chord5.play()) { //loop1
@@ -266,7 +296,9 @@ function create ()
             chord12.stop()
         }
         chord5.play();
-    });
+        this.add.image(400, 300, 'mpcscreen3');
+        
+    }, this);
     
 
     this.input.keyboard.on('keydown-E', function () {
@@ -295,7 +327,9 @@ function create ()
             chord12.stop()
         }
         chord6.play();
-    });
+        this.add.image(400, 300, 'mpcscreen4');
+        
+    }, this);
 
     this.input.keyboard.on('keydown-R', function () {
         if(chord5.play()) { //loop1
@@ -323,7 +357,9 @@ function create ()
             chord12.stop()
         }
         chord7.play();
-    });
+        this.add.image(400, 300, 'mpcscreen5');
+        
+    }, this);
 
     this.input.keyboard.on('keydown-U', function () {
         if(chord5.play()) { //loop1
@@ -351,7 +387,9 @@ function create ()
             chord12.stop()
         }
         chord8.play();
-    });
+        this.add.image(400, 300, 'mpcscreen6');
+        
+    }, this);
 
     this.input.keyboard.on('keydown-A', function () {
         if(chord5.play()) { //loop1
@@ -379,7 +417,9 @@ function create ()
             chord12.stop()
         }
         chord9.play();
-    });
+        this.add.image(400, 300, 'mpcscreen1');
+        
+    }, this);
 
     this.input.keyboard.on('keydown-D', function () {
         if(chord5.play()) { //loop1
@@ -407,9 +447,11 @@ function create ()
             chord12.stop()
         }
         chord10.play();
-    });
+        this.add.image(400, 300, 'mpcscreen2');
+        
+    }, this);
 
-    this.input.keyboard.on('keydown-H', function () {
+    this.input.keyboard.on('keydown-F', function () {
         if(chord5.play()) { //loop1
             chord5.stop()
         }
@@ -435,9 +477,11 @@ function create ()
             chord12.stop()
         }
         chord11.play();
-    });
+        this.add.image(400, 300, 'mpcscreen3');
+        
+    }, this);
 
-    this.input.keyboard.on('keydown-I', function () {
+    this.input.keyboard.on('keydown-J', function () {
         if(chord5.play()) { //loop1
             chord5.stop()
         }
@@ -463,21 +507,31 @@ function create ()
             chord12.stop()
         }
         chord12.play();
-    });
+        this.add.image(400, 300, 'mpcscreen4');
+        
+    }, this);
 
-    this.input.keyboard.on('keydown-Z', function () {
+    this.input.keyboard.on('keydown-X', function () {
         sample13.play();
-    });
+        this.add.image(400, 300, 'mpcscreen5');
+        
+    }, this);
 
     this.input.keyboard.on('keydown-C', function () {
         sample14.play();
-    });
+        this.add.image(400, 300, 'mpcscreen6');
+        
+    }, this);
+
+    this.input.keyboard.on('keydown-V', function () {
+        sample15.play();
+        this.add.image(400, 300, 'mpcscreen1');
+        
+    }, this);
 
     this.input.keyboard.on('keydown-N', function () {
-        sample15.play();
-    });
-
-    this.input.keyboard.on('keydown-O', function () {
         sample16.play();
-    });
+        this.add.image(400, 300, 'mpcscreen2');
+        
+    }, this);
 }
