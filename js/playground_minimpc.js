@@ -118,18 +118,7 @@ function create ()
 
 // LOOP 
     this.input.keyboard.on('keydown-ONE', function () {
-        if(loop1.play()) { //loop1
-            loop1.stop()
-        }
-        if(loop2.play()) {
-            loop2.stop()
-        }
-         if(loop3.play()){
-            loop3.stop()
-        }
-        if(loop4.play()){
-            loop4.stop()
-        }
+        
 
         loop1.play();
         this.add.image(400, 300, 'mpcscreen1');
@@ -137,18 +126,6 @@ function create ()
     }, this);
 
     this.input.keyboard.on('keydown-TWO', function () {
-        if(loop1.play()) { //loop1
-            loop1.stop()
-        }
-        if(loop2.play()) {
-            loop2.stop()
-        }
-         if(loop3.play()){
-            loop3.stop()
-        }
-        if(loop4.play()){
-            loop4.stop()
-        }
 
         loop2.play();
         this.add.image(400, 300, 'mpcscreen2');
@@ -156,18 +133,6 @@ function create ()
     }, this);
 
     this.input.keyboard.on('keydown-THREE', function () {
-        if(loop1.play()) { //loop1
-            loop1.stop()
-        }
-        if(loop2.play()) {
-            loop2.stop()
-        }
-         if(loop3.play()){
-            loop3.stop()
-        }
-        if(loop4.play()){
-            loop4.stop()
-        }
 
         loop3.play();
         this.add.image(400, 300, 'mpcscreen3');
@@ -175,18 +140,6 @@ function create ()
     }, this);
 
     this.input.keyboard.on('keydown-FOUR', function () {
-        if(loop1.play()) { //loop1
-            loop1.stop()
-        }
-        if(loop2.play()) {
-            loop2.stop()
-        }
-        if(loop3.play()){
-            loop3.stop()
-        }
-        if(loop4.play()){
-            loop4.stop()
-        }
 
         loop4.play();
         this.add.image(400, 300, 'mpcscreen4');
@@ -194,18 +147,6 @@ function create ()
     }, this);
 
     this.input.keyboard.on('keydown-NUMPAD_ONE', function () {
-        if(loop1.play()) { //loop1
-            loop1.stop()
-        }
-        if(loop2.play()) {
-            loop2.stop()
-        }
-         if(loop3.play()){
-            loop3.stop()
-        }
-        if(loop4.play()){
-            loop4.stop()
-        }
 
         loop1.play();
         this.add.image(400, 300, 'mpcscreen5');
@@ -213,18 +154,6 @@ function create ()
     }, this);
 
     this.input.keyboard.on('keydown-NUMPAD_TWO', function () {
-        if(loop1.play()) { //loop1
-            loop1.stop()
-        }
-        if(loop2.play()) {
-            loop2.stop()
-        }
-         if(loop3.play()){
-            loop3.stop()
-        }
-        if(loop4.play()){
-            loop4.stop()
-        }
 
         loop2.play();
         this.add.image(400, 300, 'mpcscreen6');
@@ -232,18 +161,7 @@ function create ()
     }, this);
 
     this.input.keyboard.on('keydown-NUMPAD_THREE', function () {
-        if(loop1.play()) { //loop1
-            loop1.stop()
-        }
-        if(loop2.play()) {
-            loop2.stop()
-        }
-         if(loop3.play()){
-            loop3.stop()
-        }
-        if(loop4.play()){
-            loop4.stop()
-        }
+
 
         loop3.play();
         this.add.image(400, 300, 'mpcscreen1');
@@ -251,18 +169,7 @@ function create ()
     }, this);
 
     this.input.keyboard.on('keydown-NUMPAD_FOUR', function () {
-        if(loop1.play()) { //loop1
-            loop1.stop()
-        }
-        if(loop2.play()) {
-            loop2.stop()
-        }
-         if(loop3.play()){
-            loop3.stop()
-        }
-        if(loop4.play()){
-            loop4.stop()
-        }
+
 
         loop4.play();
         this.add.image(400, 300, 'mpcscreen2');
@@ -270,18 +177,7 @@ function create ()
     }, this);
 
     this.input.keyboard.on('keydown-Q', function () {
-        if(chord5.play()) { //loop1
-            chord5.stop()
-        }
-        if(chord6.play()) {
-            chord6.stop()
-        }
-         if(chord7.play()){
-            chord7.stop()
-        }
-        if(chord8.play()){
-            chord8.stop()
-        }
+
         if(chord9.play()){
             chord9.stop()
         }
@@ -298,18 +194,7 @@ function create ()
     
 
     this.input.keyboard.on('keydown-W', function () {
-        if(chord5.play()) { //loop1
-            chord5.stop()
-        }
-        if(chord6.play()) {
-            chord6.stop()
-        }
-         if(chord7.play()){
-            chord7.stop()
-        }
-        if(chord8.play()){
-            chord8.stop()
-        }
+
         if(chord9.play()){
             chord9.stop()
         }
@@ -325,18 +210,7 @@ function create ()
     }, this);
 
     this.input.keyboard.on('keydown-E', function () {
-        if(chord5.play()) { //loop1
-            chord5.stop()
-        }
-        if(chord6.play()) {
-            chord6.stop()
-        }
-         if(chord7.play()){
-            chord7.stop()
-        }
-        if(chord8.play()){
-            chord8.stop()
-        }
+
         if(chord9.play()){
             chord9.stop()
         }
@@ -352,18 +226,7 @@ function create ()
     }, this);
 
     this.input.keyboard.on('keydown-R', function () {
-        if(chord5.play()) { //loop1
-            chord5.stop()
-        }
-        if(chord6.play()) {
-            chord6.stop()
-        }
-         if(chord7.play()){
-            chord7.stop()
-        }
-        if(chord8.play()){
-            chord8.stop()
-        }
+
         if(chord9.play()){
             chord9.stop()
         }
@@ -379,18 +242,7 @@ function create ()
     }, this);
 
     this.input.keyboard.on('keydown-T', function () {
-        if(chord5.play()) { //loop1
-            chord5.stop()
-        }
-        if(chord6.play()) {
-            chord6.stop()
-        }
-         if(chord7.play()){
-            chord7.stop()
-        }
-        if(chord8.play()){
-            chord8.stop()
-        }
+
         if(chord9.play()){
             chord9.stop()
         }
@@ -406,18 +258,7 @@ function create ()
     }, this);
 
     this.input.keyboard.on('keydown-Y', function () {
-        if(chord5.play()) { //loop1
-            chord5.stop()
-        }
-        if(chord6.play()) {
-            chord6.stop()
-        }
-         if(chord7.play()){
-            chord7.stop()
-        }
-        if(chord8.play()){
-            chord8.stop()
-        }
+
         if(chord9.play()){
             chord9.stop()
         }
@@ -433,18 +274,7 @@ function create ()
     }, this);
 
     this.input.keyboard.on('keydown-U', function () {
-        if(chord5.play()) { //loop1
-            chord5.stop()
-        }
-        if(chord6.play()) {
-            chord6.stop()
-        }
-         if(chord7.play()){
-            chord7.stop()
-        }
-        if(chord8.play()){
-            chord8.stop()
-        }
+
         if(chord9.play()){
             chord9.stop()
         }
