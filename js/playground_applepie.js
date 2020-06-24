@@ -66,6 +66,7 @@
         this.load.image('bgstars30','assets/stars_0030.png', {frameWidth:800, frameHeight:600});
         this.load.audio('theme', ['assets/audio/goodmorning.mp3']);
         this.load.audio('coinsound', ['assets/audio/coin.mp3']);
+
         this.load.audio('gameoversound', ['assets/audio/gameover.mp3']);
         
     }
@@ -78,6 +79,7 @@
         this.music.play(config);
         this.music.setLoop(true);
 
+        
 
         
        
@@ -193,11 +195,13 @@
         star.disableBody(true, true);
 
         var coin = this.sound.add('coinsound',config)
-        coin.play(config);
-
-        score +=10;
-        scoreText.setText('score: ' + score);
+        coin.volume = 0.3
+        coin.play();
         
+
+        score +=135;
+        scoreText.setText('score: ' + score);
+
 
 
         if (stars.countActive(true) === 0)
@@ -226,6 +230,7 @@
         this.music.stop(config);
         var gameoversound = this.sound.add('gameoversound',config)
         gameoversound.play(config);
+        gameoversound.volume = 0.3
 
 
         this. physics.pause();
