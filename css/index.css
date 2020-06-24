@@ -23,6 +23,10 @@ html,body {
       margin: 0;
       padding: 0;
     }
+
+.post_spacer { 
+padding: 30px;
+}
     
     #mobilefooter {
     background-image: url('https://assets.azikazin.com/footer.png');
