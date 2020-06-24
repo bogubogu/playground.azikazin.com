@@ -416,6 +416,7 @@ padding:1% 0% 0em  1%;
     .mobile-navicon {
     width:100%;
     margin-left:8%;
+	filter: drop-shadow(1px 2px 1px #dba500); }
     }
     
     .mobile-navfeature{
