@@ -759,7 +759,7 @@ div #news_chopnbeats {
     }
     .aboutus_right {
         float:none;
-        width:auto;
+        width:100%;
     }
     #aboutus_web {
         display: none;
