@@ -760,6 +760,8 @@ div #news_chopnbeats {
     .aboutus_right {
         float:none;
         width:100%;
+        padding: 0px 1px 0px 0px;
+    margin-left: 3px;
     }
     #aboutus_web {
         display: none;
