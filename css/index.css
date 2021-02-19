@@ -612,8 +612,8 @@ border-radius:4em;}
 }
 .aboutus_left {
     width:360px;
-    padding-right:30px;
-    margin-left:10px;
+    padding-right:0px;
+    margin-left:0px;
     float:left;
 }
 .aboutus_right {
