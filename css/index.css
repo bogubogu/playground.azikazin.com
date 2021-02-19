@@ -27,7 +27,7 @@ html,body {
 .post_spacer { 
 padding: 20px;
 }
-    
+   
     #mobilefooter {
     background-image: url('https://assets.azikazin.com/footer.png');
     background-size: 40%;
@@ -40,7 +40,7 @@ padding: 20px;
 }
     
     .tags a {
-        text-decoration:none}
+        text-decoration:none
     }
     
     .tags button {
@@ -143,9 +143,6 @@ figure .embed_iframe {
     }
 }
 
-.post.text {
-    background:#f;
-}
 
 #source {
     float:right;
@@ -420,7 +417,7 @@ padding:1% 0% 0em  1%;
     .mobile-navicon {
     width:100%;
     margin-left:8%;
-	filter: drop-shadow(1px 2px 1px #dba500); }
+	filter: drop-shadow(1px 2px 1px #dba500);
     }
     
     .mobile-navfeature{
@@ -568,9 +565,6 @@ padding:1% 0% 0em  1%;
 }
 @media (min-width: 769px) {
 
-html {
-
-}
 
 
 #wrap {
@@ -590,7 +584,7 @@ border-radius:4em;}
     border-radius:0 0 1em 1em;}
 
 .mobile-topnav {
-    border-radius: 0em 0em 0 0;m;
+    border-radius: 0em 0em 0 0;
 }
 
 
@@ -625,7 +619,7 @@ border-radius:4em;}
 .aboutus_right {
     width:385px;
     padding-left:10px;
-    margin-right:5px;
+    margin-right:-96px;
     float: right;
 }
 /* 누들헤드 소개 페이지 CSS */
@@ -797,11 +791,9 @@ div #news_chopnbeats {
     padding: 2% 2.5% 0% 2.5%;
 }
 
-#main h2, #main p {
-}
 
 #main h2 {
-    font-size:1.7em;
+    font-size:1.2em;
     margin-top:0.4em;
     line-height:1.5em;
 }
@@ -875,6 +867,10 @@ div #news_chopnbeats {
     
 }
 
+.hr_dot {
+    border-top: 1px dashed #bbb; border-bottom: 1px dashed #fff;
+}
+
 .hrinset {
 display:none;
   
@@ -883,7 +879,7 @@ display:none;
 
 body {
     font-size:.85em;
-    color:#000;
+    color:#0a64ab;
     padding:0px;
     margin:0;
     font-family:Arial,'Spoqa Han Sans';
@@ -900,9 +896,11 @@ body .post_main:not(h2) {
     font-style:normal;
     font-weight:00;
     color:rgba(0,0,0,0.85);
-    font-size:1.em;
+    font-size:1em;
     line-height:2.0;
     margin-top:3px;
+    text-decoration:underline;
+
 }
 .post_top {
     overflow:hidden;
@@ -916,7 +914,7 @@ body .post_main:not(h2) {
 .post_main {
     margin-top:0em;
     margin-bottom:.1em;
-    margin-left:5px;
+    margin-left:0px;
     display:inline-block;
     width:100%;
 }
@@ -1015,18 +1013,21 @@ h1,h2,h3,h4,h5,h6 {
     font-family:Arial,'Spoqa Han Sans';
 }
 h1:first-of-type,h2:first-of-type {
-    margin-top:4px
+    margin-top:4px;
+    color:#0a64ab;
 }
 h2 {
-    line-height:1.3em
+    line-height:1.3em;
+    color:#0a64ab;
 }
 h3 {
     margin-top:4px;
-    margin-bottom:4px
+    margin-bottom:4px;
+    color:#0a64ab;
 }
 h4 {
     font:.9em sans-serif;
-    color:#666;
+    color:#0a64ab;
     margin-top:0;
     margin-bottom:0;
     text-transform:uppercase
@@ -1137,7 +1138,7 @@ div#nav {
 }
 @media ( min-width:1025px ) {
     #home-wrapper {
-        width:72%;
+        width:100%;
     }
     #home-wrapper #main {
     float:left;
