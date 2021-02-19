@@ -619,7 +619,7 @@ border-radius:4em;}
 .aboutus_right {
     width:385px;
     padding-left:10px;
-    margin-right:-96px;
+    margin-right:5px;
     float: right;
 }
 /* 누들헤드 소개 페이지 CSS */
@@ -793,7 +793,7 @@ div #news_chopnbeats {
 
 
 #main h2 {
-    font-size:1.2em;
+    font-size:1.7em;
     margin-top:0.4em;
     line-height:1.5em;
 }
@@ -914,7 +914,7 @@ body .post_main:not(h2) {
 .post_main {
     margin-top:0em;
     margin-bottom:.1em;
-    margin-left:0px;
+    margin-left:5px;
     display:inline-block;
     width:100%;
 }
@@ -1138,7 +1138,7 @@ div#nav {
 }
 @media ( min-width:1025px ) {
     #home-wrapper {
-        width:100%;
+      width:72%;
     }
     #home-wrapper #main {
     float:left;
