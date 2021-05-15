@@ -1,0 +1,253 @@
+<html>
+<HTML>
+<HEAD>
+	<TITLE>BLUE-B</TITLE>
+<style type="text/css">
+	.img {position:absolute;left:-10000;}
+</style>
+
+<script type="text/javascript">
+<!--
+
+window.onerror = new Function("return true");
+screen.bufferDepth = 16;
+var O  = new Array();
+var nx = 0;
+var ny = 0;
+////////////////////////////
+var  N = 6;
+var NN = 16;
+var  T = 400;
+///////////////////////////
+
+function spAn(k,q){
+	I = document.getElementById(k?"G1":"DOOT").getElementsByTagName("img");
+	c = Math.floor((I.length)*Math.random())
+	o = document.createElement("img");
+	o.src = I[c].src;
+	o.style.zIndex = (k?2:1);
+	o.className="img";
+	document.body.appendChild(o);
+	this.k   = k;
+	this.w   = o.width * .5;
+	this.h   = o.height * .5;
+	this.obj = o.style;
+	this.t   = 0;
+	this.x   = 0;
+	this.y   = 0;
+	this.dy  = 0;
+	this.dx  = 0;
+	this.q   = q;
+	this.INI = function() {
+		with(this){
+			if(k){
+				t   = .2;
+				x   = nx * .5;
+				y   = ny + this.h;
+				dy  = -eval("dyy=1;d=0;while(d<(ny-Math.random()*100)){d+=dyy;dyy+=this.t}");
+				dx  = -8 * Math.random() + 4;
+			} else {
+				x	= 0;
+				y	= 0;
+				a   = 2 * Math.PI * Math.random();
+				r   = (q>.3)?5 * Math.random():5;
+				dx  = r * Math.sin(a);
+				dy  = r * Math.cos(a)-4;
+				obj.left = -1000;
+			}
+		}	
+	}
+	this.INI();
+	this.SCR = function(X,Y){
+		with(this){
+			x  += dx;
+			y  += dy;
+			if(k){
+				dy += t;
+				if(dy>2){
+					obj.visibility="hidden";
+					obj.left = -1000;
+					for(var i=0;i<NN;i++)O[i].SCR(x,y);
+				} else {
+					obj.left = Math.round(x - w);
+					obj.top  = Math.round(y - h);
+				}
+				if(y>ny*3){
+					INI();
+					for(var i=0;i<NN;i++)O[i].INI();
+					obj.visibility="visible";
+				}
+			} else {
+				if(Y+y<ny+50){
+					obj.left = Math.round(X + x - w);
+					obj.top  = Math.round(Y + y - h);
+				}
+			}
+		}
+	}
+	if(k){
+		this.O = new Array();
+		q = Math.random();
+		for(var i=0;i<NN;i++)this.O[i] = new spAn(false,q);
+	}
+}
+
+function resize(){
+	nx = document.body.clientWidth;
+	ny = document.body.clientHeight;
+}
+onresize = resize;
+
+onload = function() {
+	resize();
+	for(var i=0;i<N;i++){
+		O[i] = new spAn(true);
+		setTimeout('setInterval("O['+i+'].SCR()",16)',T*i);
+	}
+}
+//-->
+</script>
+</head>
+
+<body>
+<div id="G1" style="visibility:hidden">
+	<IMG src="https://i.pinimg.com/originals/9d/9b/d1/9d9bd13afce1a798d22ecfd9897730ed.gif?q=60">
+
+</div>
+
+<div id="DOOT" style="visibility:hidden">
+	<IMG src="http://www.blueb.co.kr/SRC/javascript/image1/star1.gif"> 
+	<IMG src="http://www.blueb.co.kr/SRC/javascript/image1/star2.gif"> 
+	<IMG src="http://www.blueb.co.kr/SRC/javascript/image1/star3.gif"> 
+	<IMG src="http://www.blueb.co.kr/SRC/javascript/image1/star4.gif">
+</div>
+
+</body>
+</html>
+<body style="background-color: blue;">
+<style type="text/css">* {cursor: url(https://cur.cursors-4u.net/games/gam-10/gam917.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2009/04/03/keaton-mask-the-legend-of-zelda-majora-s-mask.html" target="_blank" title="Keaton Mask - The Legend of Zelda Majora's Mask"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Keaton Mask - The Legend of Zelda Majora's Mask" style="position:absolute; top: 0px; right: 0px;" /></a>
+
+
+<font size=56>
+<font color=white>
+<br>
+<br>
+<br>
+<br>
+<Center> <div style="border: 1px dashed #000000; height: auto; padding:10px;">C  드 라 이 브   파 일 들 이   쿠 데 타 를   일 으 켰 습 니 다 ! <br> 
+쿠 데 타 후 원 :  7979-28-72367  kakaobank   .</div>
+</center>
+</br>
+<script type="text/javascript">
+
+  //Configure below to change URL path to the snow image
+  var snowsrc="/images/snow.gif"
+
+  // Configure below to change number of snow to render
+  var no = 500;
+
+  // Configure whether snow should disappear after x seconds (0=never):
+  var hidesnowtime = 0;
+
+  // Configure how much snow should drop down before fading ("windowheight" or "pageheight")
+  var snowdistance = "pageheight";
+
+
+  var ie4up = (document.all) ? 1 : 0;
+  var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
+
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+
+}
+
+
+  var dx, xp, yp;    // coordinate and position variables
+  var am, stx, sty;  // amplitude and step variables
+  var i, doc_width = 800, doc_height = 600;
+
+
+  if (ns6up) {
+    doc_width = self.innerWidth;
+    doc_height = self.innerHeight;
+  } else if (ie4up) {
+
+    doc_width = iecompattest().clientWidth;
+    doc_height = iecompattest().clientHeight;
+
+  }
+
+
+  dx = new Array();
+  xp = new Array();
+  yp = new Array();
+  am = new Array();
+  stx = new Array();
+  sty = new Array();
+  snowsrc=(snowsrc.indexOf("ezoil.kr")!=-1)? "snow.gif" : snowsrc
+
+  for (i = 0; i < no; ++ i) {  
+
+    dx[i] = 0;                        // set coordinate variables
+    xp[i] = Math.random()*(doc_width-50);  // set position variables
+    yp[i] = Math.random()*doc_height;
+    am[i] = Math.random()*20;         // set amplitude variables
+    stx[i] = 0.02 + Math.random()/10; // set step variables
+    sty[i] = 0.7 + Math.random();     // set step variables
+
+if (ie4up||ns6up) {
+      if (i == 0) {
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><a href=\"http://ezoil.kr\"><img src='"+snowsrc+"' border=\"0\"><\/a><\/div>");
+
+      } else {
+
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
+
+      }
+
+    }
+
+  }
+
+
+  function snowIE_NS6() {  // IE and NS6 main animation function
+    doc_width = ns6up?window.innerWidth-10 : iecompattest().clientWidth-10;
+
+doc_height=(window.innerHeight && snowdistance=="windowheight")? window.innerHeight : (ie4up && snowdistance=="windowheight")?  iecompattest().clientHeight : (ie4up && !window.opera && snowdistance=="pageheight")? iecompattest().scrollHeight : iecompattest().offsetHeight;
+
+    for (i = 0; i < no; ++ i) {  // iterate for every dot
+
+      yp[i] += sty[i];
+
+      if (yp[i] > doc_height-50) {
+
+        xp[i] = Math.random()*(doc_width-am[i]-30);
+        yp[i] = 0;
+        stx[i] = 0.02 + Math.random()/10;
+        sty[i] = 0.7 + Math.random();
+      }
+
+      dx[i] += stx[i];
+      document.getElementById("dot"+i).style.top=yp[i]+"px";
+      document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i])+"px";  
+    }
+    snowtimer=setTimeout("snowIE_NS6()", 10);
+  }
+
+
+function hidesnow(){
+if (window.snowtimer) clearTimeout(snowtimer)
+for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden"
+
+}
+
+
+if (ie4up||ns6up){
+    snowIE_NS6();
+if (hidesnowtime>0)
+setTimeout("hidesnow()", hidesnowtime*1000)
+}
+</script>
+
+</html>
